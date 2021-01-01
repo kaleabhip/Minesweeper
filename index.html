@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="helpers.js"></script>
+
+    <!-- React -->
+    <script src="lib/react.js"></script>
+    <script src="lib/react-dom.js"></script>
+
+    <!-- UIkit CSS template -->
+    <link rel="stylesheet" href="lib/uikit.min.css">
+    <script src="lib/uikit.min.js"></script>
+    <script src="lib/uikit-icons.min.js"></script>
+
+    <!-- Fontawesome icon fonts -->
+    <link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="lib/materialize.min.css"> -->
+
+    <!-- <script src="lib/materialize.min.js"></script> -->
+
+    <title>Minesweeper</title>
+</head>
+
+<body>
+    <header>
+        <h1>Minesweeper</h1>
+    </header>
+    <main>
+        <div class="menubar">
+            Menu:
+            <ul class="menu">
+                <li>
+                    <select name="difficulty" id="difficulty">
+                        <option value="easy">Easy - 10x10 - 12 mines</option>
+                        <option value="medium">Medium - 15x15 - 30 mines</option>
+                        <option value="hard">Hard - 20x20 - 55 mines</option>
+                    </select>
+                </li>
+                <li><button id="new" class="newgame uk-button uk-button-primary">Start New Game</button></li>
+            </ul>
+        </div>
+        <div class="gameWindow" id="gameWindow"></div>
+    </main>
+    <footer>Created by Abhishek Kale</footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
